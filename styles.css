@@ -1,0 +1,92 @@
+:root {
+    --primaryColor: #222;
+    --secondaryColor: #fff;
+    --lightCover: #00000022;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid var(--lightCover);
+    margin: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    border-bottom: 2px solid var(--lightCover);
+    width: 50%;
+}
+
+td {
+    vertical-align: top;
+}
+
+tr > th:first-child, tr > td:first-child {
+    border-right: 2px solid var(--lightCover);
+}
+
+li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: calc(100vh - 30px);
+}
+
+div {
+    width: 100%;
+}
+
+.timeline {
+    width: 100%;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 15px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+}
